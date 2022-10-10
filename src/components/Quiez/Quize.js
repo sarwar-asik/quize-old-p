@@ -4,13 +4,21 @@ import SingleQuize from './SingleQuize';
 
 const Quize = () => {
     const quizes = useLoaderData();
-    
+    const {total,id,name,logo,questions} =quizes.data
 
     return (
-        <div>
-           <div className="">
+        <div className=''>
+            <div className="text-center">
+
+            <h1>Topics-{id} : {name}</h1>
+            <img className='img-fluid' src={logo} alt="" />
+            <h3>Total Questions : {total}</h3>
+            
+
+            </div>
+           <div className="p-5">
              {
-                quizes.data.questions.map(quize=><SingleQuize key={quize.id} 
+                questions.map(quize=><SingleQuize key={quize.id} 
                 quize={quize}></SingleQuize>)
             }
            </div>
