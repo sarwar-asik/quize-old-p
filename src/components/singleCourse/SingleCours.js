@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './SingleCourse.css';
-import { faCheckSquare, faCoffee,faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import {faArrowRightArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 const SingleCours = ({course}) => {
@@ -12,10 +12,10 @@ const SingleCours = ({course}) => {
             <img className='course-img' src={logo} alt="" />
             <h4>Total Number {total}</h4>
       
-      
+      <Link to={`course/${id}`}>
       <button className='btn btn-warning btn-outline-info fs-3 text-muted border border-none'> Start Test <FontAwesomeIcon icon={faArrowRightArrowLeft}/></button>
 
-
+      </Link>
             
         </div>
     );

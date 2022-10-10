@@ -15,7 +15,12 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home></Home> },
       { path: "course", element: <Course></Course> },
-      {path:'quize',element:<Quize></Quize>}
+      {path:'quize',element:<Quize></Quize>},
+      {path:'course/:id', 
+      loader:async({params})=>{
+        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+      },
+      element:<Quize></Quize>}
     ],
   },
 ]);
