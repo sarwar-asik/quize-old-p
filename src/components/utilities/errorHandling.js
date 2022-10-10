@@ -10,7 +10,7 @@ import {useRouteError } from "react-router-dom";
         <br />
         {error && (
           <div>
-            <p className='text-danger fs-2'>{error.statusText || error.message}</p>
+            <p className='text-muted fs-2'>{error.statusText || error.message}</p>
             <p className="text-warning">{error.status}</p>
           </div>
         )}
