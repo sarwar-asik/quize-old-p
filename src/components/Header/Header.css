@@ -1,0 +1,27 @@
+.header-container{
+    background-color: gray;
+    padding: 10px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between; 
+    
+}
+
+.Link{
+    display: flex;
+    align-items: center;
+    justify-content: between;
+    gap: 10px;
+
+}
+.header-container a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(17, 182, 182);
+    padding: 7px;
+    border-radius: 8px;
+}
+
+.header-container a:hover{
+background-color: rgb(179, 105, 15);
+}
