@@ -22,7 +22,7 @@ const SingleQuize = ({ quize }) => {
 
   return (
     <div className="bg-light shadow-lg  px-5 py-5 my-3 ">
-      <div className=" d-flex gap-3 justify-contents-center">
+      <div className="d-flex justify-content-between">
         <h4 className="text-primary bg-info py-3 rounded my-2 px-5">
           Questions: {question}?
         </h4>
