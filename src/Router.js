@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Blogs from "./components/blogs/Blogs";
 import Chart from "./components/charts/Chart";
 import Course from "./components/Course/Course";
+import HeaderSection from "./components/headerSection/HeaderSection";
 import Home from "./components/homes/Home";
 import Quize from "./components/Quiez/Quize";
 import ErrorBoundary from "./components/utilities/errorHandling";
@@ -32,6 +33,9 @@ const router = createBrowserRouter([
       },
       {
         path:'blogs',element:<Blogs></Blogs>
+      },
+      {
+        path:'about', element:<HeaderSection></HeaderSection>
       }
     ],
   },

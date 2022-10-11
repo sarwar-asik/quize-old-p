@@ -1,6 +1,11 @@
 .header-containers{
     width:fit-content;
-    height:600px;
-   
+    height:50%px;
+  
 
+}
+.header-containers h1{
+    background-color: gray;
+    margin-bottom: 30px;
+  
 }
