@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
+import Blogs from "./components/blogs/Blogs";
 import Chart from "./components/charts/Chart";
 import Course from "./components/Course/Course";
 import Home from "./components/homes/Home";
@@ -28,6 +29,9 @@ const router = createBrowserRouter([
       },
       {
         path:'chart',element:<Chart></Chart>
+      },
+      {
+        path:'blogs',element:<Blogs></Blogs>
       }
     ],
   },
