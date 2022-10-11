@@ -8,7 +8,7 @@ const Quize = () => {
 
     return (
         <div className=''>
-            <div className="text-center">
+            <div className="text-center bg-secondary container py-3 my-3 rounded text-light">
 
             <h1>Topics-{id} : {name}</h1>
             <img className='img-fluid' src={logo} alt="" />

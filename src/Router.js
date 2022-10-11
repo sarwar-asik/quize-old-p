@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    loader: () => fetch("fakeData.json"),
+    loader:async()=>fetch("https://openapi.programming-hero.com/api/quiz"),
     errorElement: <ErrorBoundary />,
     children: [
       { path: "/", element: <Home></Home> },

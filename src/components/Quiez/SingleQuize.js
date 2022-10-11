@@ -24,21 +24,21 @@ const SingleQuize = ({ quize }) => {
     <div className="bg-light shadow-lg  px-5 py-5 my-3 ">
       <div className="d-flex justify-content-between">
         <h4 className="text-primary bg-info py-3 rounded my-2 px-5">
-          Questions: {question}?
+          Questions: {question.replace(/(<([^>]+)>)/ig, '')}?
         </h4>
         <FontAwesomeIcon icon={faEye} onClick={notify}></FontAwesomeIcon>
       </div>
-      <form className="quize text-center">
+      <form className="quize text-center" action="/action_page.php">
         {options.map((option) => {
           return [
             <p className="answer" onClick={() => notify2(option)}>
               <input
                 type="radio"
-                id="quize"
+                id="quiz"
                 name="fav_language"
-                value="quize"
+                value="quiz"
               ></input>
-              <label for="html">{option}</label>
+              <label for="quiz">{option}</label>
             </p>,
           ];
         })}
