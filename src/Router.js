@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
+import Chart from "./components/charts/Chart";
 import Course from "./components/Course/Course";
 import Home from "./components/homes/Home";
 import Quize from "./components/Quiez/Quize";
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorBoundary />,
     children: [
       { path: "/", element: <Home></Home> },
-      { path: "course", element: <Course></Course> },
+      { path: "/course", element: <Course></Course> },
       { path: "quize", element: <Quize></Quize> },
       {
         path: "/course/:id",
@@ -25,6 +26,9 @@ const router = createBrowserRouter([
         },
         element: <Quize></Quize>,
       },
+      {
+        path:'chart',element:<Chart></Chart>
+      }
     ],
   },
   {
