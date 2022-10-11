@@ -1,4 +1,3 @@
-import React from "react";
 import "./Quize.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -18,32 +17,35 @@ const SingleQuize = ({ quize }) => {
     }
   };
 
-  const notify = () => toast('Correct Answer == '+correctAnswer);
+  const notify = () => toast("Correct Answer == " + correctAnswer);
 
   return (
-    <div className="bg-light shadow-lg  px-5 py-5 my-3 ">
-      <div className="d-flex justify-content-between">
-        <h4 className="text-primary bg-info py-3 rounded my-2 px-5">
-          Questions: {question.replace(/(<([^>]+)>)/ig, '')}?
+    <div className="bg-light shadow-lg  px-2 py-5 my-3 ">
+      <div className="questions">
+        <h4 className="text-primary bg-info py-3 rounded my-2 ">
+          Questions: {question.replace(/(<([^>]+)>)/gi, "")}?
         </h4>
         <FontAwesomeIcon icon={faEye} onClick={notify}></FontAwesomeIcon>
       </div>
-      <form className="quize text-center" action="/action_page.php">
+      <div className="quize text-center">
         {options.map((option) => {
           return [
             <p className="answer" onClick={() => notify2(option)}>
               <input
                 type="radio"
-                id="quiz"
+                id="javascript"
                 name="fav_language"
-                value="quiz"
-              ></input>
-              <label for="quiz">{option}</label>
+                value="JavaScript"
+              />
+              {option}
             </p>,
           ];
         })}
-      </form>
-      <ToastContainer autoClose={2000}  toastStyle={{ backgroundColor: "darkorange",color:'white' }}  />
+      </div>
+      <ToastContainer
+        autoClose={2000}
+        toastStyle={{ backgroundColor: "darkorange", color: "white" }}
+      />
     </div>
   );
 };

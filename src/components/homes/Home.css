@@ -1,6 +1,6 @@
-.home-containers{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.home-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

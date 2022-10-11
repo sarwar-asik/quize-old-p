@@ -5,7 +5,6 @@ import "./Courses.css";
 
 const Course = () => {
   const courses = useContext(CousreContext);
-  // console.log(courses.data)
   return (
     <div className="container text-center ">
       <h1 className="my-3 bg-warning py-3 text-muted">Our Course </h1>
