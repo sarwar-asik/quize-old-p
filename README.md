@@ -2,15 +2,15 @@
 # Developer Test Project(assignment-9)
 
 Live server Link : 
-## [https://cheery-blancmange-721e12.netlify.app/]
+# [https://cheery-blancmange-721e12.netlify.app/]
 
 private ripo Link :
-# (https://github.com/programming-hero-web-course2/b6-quiz-crackerz-sarwar-asik)
+### (https://github.com/programming-hero-web-course2/b6-quiz-crackerz-sarwar-asik)
 
 
 
 
-## My Features descriptions: 
+# My Features descriptions: 
 1. there are some components in my projects about online test
 2. Home components have a Navbar, Header section and our course
 3. Every click on the course use could access to queze section.
