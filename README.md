@@ -2,7 +2,7 @@
 # Developer Test Project(assignment-9)
 
 Live server Link : 
-# [https://cheery-blancmange-721e12.netlify.app/]
+# { https://remarkable-narwhal-043a41.netlify.app/ }
 
 private ripo Link :
 ### (https://github.com/programming-hero-web-course2/b6-quiz-crackerz-sarwar-asik)
