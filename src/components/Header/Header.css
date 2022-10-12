@@ -1,34 +1,14 @@
-.header-container {
-  background-color: gray;
-  padding: 10px;
-  color: aliceblue;
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 400px) {
-  .header-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-.nav-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-.header-container a {
+.nav-item a {
   text-decoration: none;
-  color: aliceblue;
   padding: 7px;
   border-radius: 8px;
+  margin-right: 7px;
 }
-
-.header-container a:hover {
-  background-color: rgb(179, 105, 15);
+.navbar-nav {
+  margin-top: 10px;
 }
 
 .active {
   background-color: cornflowerblue;
+  color: aliceblue;
 }
